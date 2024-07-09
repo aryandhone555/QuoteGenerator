@@ -42,7 +42,7 @@ st.markdown("""
     </style>
     """, unsafe_allow_html=True)
 
-st.title("Here's a Quote for You, Cutie")
+st.title("Here's a Quote for You, Cutie 😘")
 st.markdown("Welcome! Refresh the page to see a new quote.")
 
 quote = get_random_quote()
