@@ -45,6 +45,11 @@ st.markdown("""
 st.title("Heyy Doctor🩺!!! Here's a Quote for You")
 st.markdown("Welcome! Refresh the page to see a new quote.")
 
+# Add a refresh button
+if st.button("Refresh Quote"):
+    # Simulate page reload by modifying the query parameters using st.query_params
+    st.query_params.from_dict({"refresh": "true"})
+
 quote = get_random_quote()
 
 if quote:
