@@ -10,10 +10,11 @@ def get_random_quote():
 
 st.set_page_config(page_title="Random Quote Generator", page_icon=":sparkles:", layout="wide")
 
+# CSS styling with baby pink background color
 st.markdown("""
     <style>
     body {
-        background-color: #F3E5F5;
+        background-color: #FDEEF4;
         color: #4A148C;
     }
     .quote-box {
@@ -42,14 +43,15 @@ st.markdown("""
     </style>
     """, unsafe_allow_html=True)
 
+# Page title and description
 st.title("Heyy Doctor🩺!!! Here's a Quote for You")
 st.markdown("Welcome! Refresh the page to see a new quote.")
 
 # Add a refresh button
 if st.button("Refresh Quote"):
-    # Simulate page reload by modifying the query parameters using st.query_params
-    st.query_params.from_dict({"refresh": "true"})
+    st.query_params.from_dict({"refresh": "true"})  # Simulate page reload
 
+# Fetch and display the random quote
 quote = get_random_quote()
 
 if quote:
@@ -57,6 +59,7 @@ if quote:
 else:
     st.error("Failed to fetch a quote. Please try again later.")
 
+# Footer with designer information
 st.markdown("""
     <div class="footer">
         Designed by <a href="https://linktr.ee/aryandhone555">Aryan</a> <br>
