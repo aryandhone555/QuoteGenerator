@@ -15,7 +15,7 @@ st.markdown(
     """
     <style>
     .stApp {
-        background-color: #FDEEF4;  /* Baby pink background */
+        background-color: #ff71cf;  /* Baby pink background */
     }
     .quote-box {
         background-color: #E1BEE7;
