@@ -10,12 +10,12 @@ def get_random_quote():
 
 st.set_page_config(page_title="Random Quote Generator", page_icon=":sparkles:", layout="wide")
 
-# CSS styling with baby pink background color
-st.markdown("""
+# Use Streamlit markdown for background color styling
+st.markdown(
+    """
     <style>
-    body {
-        background-color: #FDEEF4;
-        color: #4A148C;
+    .stApp {
+        background-color: #FDEEF4;  /* Baby pink background */
     }
     .quote-box {
         background-color: #E1BEE7;
@@ -41,7 +41,8 @@ st.markdown("""
         text-decoration: underline;
     }
     </style>
-    """, unsafe_allow_html=True)
+    """, unsafe_allow_html=True
+)
 
 # Page title and description
 st.title("Heyy Doctor🩺!!! Here's a Quote for You")
